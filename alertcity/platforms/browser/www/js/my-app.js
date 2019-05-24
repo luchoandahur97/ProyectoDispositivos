@@ -30,7 +30,6 @@ var mainView = app.views.create('.view-main');
 // Handle Cordova Device Ready Event
 $$(document).on('deviceready', function() {
     console.log("Device is ready!");
-    //$$("#btn-tomar").on("click",tomarFoto);
 });
 
 // Option 1. Using one 'page:init' handler for all pages
@@ -44,7 +43,3 @@ $$(document).on('page:init', '.page[data-name="about"]', function (e) {
     // Do something here when page with data-name="about" attribute loaded and initialized
     console.log(e);
 })
-
-function SOS (alerta){
-
-};

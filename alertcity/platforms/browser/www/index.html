@@ -22,8 +22,8 @@
     <title>My App</title>
     <!-- Path to Framework7 Library CSS -->
     <link rel="stylesheet" href="lib/framework7/css/framework7.min.css">
-    <!-- Path to your custom app styles-->
-    <link href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
 
 <body>
@@ -39,32 +39,69 @@
                 <!-- Top Navbar -->
                 <div class="navbar">
                     <div class="navbar-inner">
-                    <div class="title">Proyecto</div>
+                    <div class="title">SOSApp</div>
                     </div>
                 </div>
         
                 <!-- Toolbar -->
+                <!--
                 <div class="toolbar">
                     <div class="toolbar-inner">
+                    -->
                     <!-- Toolbar links -->
+                    <!--
                     <a href="#" class="link">Link 1</a>
                     <a href="#" class="link">Link 2</a>
                     </div>
                 </div>
+                -->
         
                 <!-- Scrollable page content -->
                 <div class="page-content">
-                    <p>Page content goes here</p>
-                    <!-- Link to another page -->
-                    <a href="/about/" data-view=".page-content">About app</a>
 
-                    <div class= block>
-                        <div class= row>
-                           
+                        <img class="imagenInicio" src="vector/position.svg" height="100px" width="100px" />
 
+                    <form id="formulario">
+
+                        <div class="list inline-labels no-hairlines-md">
+                                <ul>
+                                  <li class="item-content item-input">
+                                    <div class="item-inner">
+                                      <div class="item-title item-label">Usuario</div>
+                                      <div class="item-input-wrap">
+                                        <input type="text" placeholder="Tu nombre de usuario">
+                                        <span class="input-clear-button"></span>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="item-content item-input">
+                                    <div class="item-inner">
+                                      <div class="item-title item-label">Contraseña</div>
+                                      <div class="item-input-wrap">
+                                        <input type="password" placeholder="**********">
+                                        <span class="input-clear-button"></span>
+                                      </div>
+                                    </div>
+                                  </li>
+                                </ul>
                         </div>
-                        
+                    </form>	
+                    
+                    <div class="block">
+                            <p class="row">
+                              <button class="col button button-big button-fill">Iniciar Sesión</button>
+                            </p>
                     </div>
+
+                    <div class="block">
+                            <p class="row">
+                              <button class="col button color-gray">¿No tienes cuenta? ¡Regístrate!</button>
+                            </p>
+                    </div>
+                        
+                    <!-- Link to another page 
+                    <a href="/about/" data-view=".page-content">¿No tienes cuenta en SOSApp?</a>
+                    -->
                 </div>
             </div>
         </div>
