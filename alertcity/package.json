@@ -5,12 +5,13 @@
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "displayName": "Alertcity",
-    "dependencies": {
-        "cordova-browser": "^5.0.4"
-    },
     "cordova": {
         "platforms": [
             "browser"
-        ]
+        ],
+        "plugins": {}
+    },
+    "dependencies": {
+        "cordova-browser": "~5.0.4"
     }
 }
