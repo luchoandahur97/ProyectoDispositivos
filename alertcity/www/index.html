@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <!--
         Customize this policy to fit your own app's needs. For more guidance, see:
@@ -10,7 +11,7 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src * 'unsafe-inline'; media-src *">
 
     <!-- Required meta tags-->
     <meta charset="utf-8">
@@ -23,6 +24,8 @@
     <!-- Path to Framework7 Library CSS -->
     <link rel="stylesheet" href="lib/framework7/css/framework7.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/perfil.css">
 
 </head>
 
@@ -30,78 +33,84 @@
     <div id="app">
         <!-- Statusbar overlay -->
         <div class="statusbar"></div>
-    
+
         <!-- Your main view, should have "view-main" class -->
         <div class="view view-main">
             <!-- Initial Page, "data-name" contains page name -->
             <div data-name="home" class="page">
-    
+
                 <!-- Top Navbar -->
                 <div class="navbar">
                     <div class="navbar-inner">
-                    <div class="title">SOSApp</div>
+                        <div class="title">SOSApp</div>
                     </div>
                 </div>
-        
+
                 <!-- Toolbar -->
                 <!--
                 <div class="toolbar">
                     <div class="toolbar-inner">
                     -->
-                    <!-- Toolbar links -->
-                    <!--
+                <!-- Toolbar links -->
+                <!--
                     <a href="#" class="link">Link 1</a>
                     <a href="#" class="link">Link 2</a>
                     </div>
                 </div>
                 -->
-        
+
                 <!-- Scrollable page content -->
                 <div class="page-content">
 
-                        <img class="imagenInicio" src="vector/position.svg" height="100px" width="100px" />
+                    <img class="imagenInicio" src="vector/position.svg" height="100px" width="100px" />
 
                     <form id="formulario">
 
                         <div class="list inline-labels no-hairlines-md">
-                                <ul>
-                                  <li class="item-content item-input">
+                            <ul>
+                                <li class="item-content item-input">
                                     <div class="item-inner">
-                                      <div class="item-title item-label">Usuario</div>
-                                      <div class="item-input-wrap">
-                                        <input type="text" placeholder="Tu nombre de usuario">
-                                        <span class="input-clear-button"></span>
-                                      </div>
+                                        <div class="item-title item-label">Usuario</div>
+                                        <div class="item-input-wrap">
+                                            <input type="text" placeholder="Tu nombre de usuario">
+                                            <span class="input-clear-button"></span>
+                                        </div>
                                     </div>
-                                  </li>
-                                  <li class="item-content item-input">
+                                </li>
+                                <li class="item-content item-input">
                                     <div class="item-inner">
-                                      <div class="item-title item-label">Contraseña</div>
-                                      <div class="item-input-wrap">
-                                        <input type="password" placeholder="**********">
-                                        <span class="input-clear-button"></span>
-                                      </div>
+                                        <div class="item-title item-label">Contraseña</div>
+                                        <div class="item-input-wrap">
+                                            <input type="password" placeholder="**********">
+                                            <span class="input-clear-button"></span>
+                                        </div>
                                     </div>
-                                  </li>
-                                </ul>
+                                </li>
+                            </ul>
                         </div>
-                    </form>	
-                    
+                    </form>
+
                     <div class="block">
-                            <p class="row">
-                              <button class="col button button-big button-fill">Iniciar Sesión</button>
-                            </p>
+                        <p class="row">
+                            <button class="col button button-big button-fill">Iniciar Sesión</button>
+                        </p>
                     </div>
 
                     <div class="block">
-                            <p class="row">
-                              <button class="col button color-gray">¿No tienes cuenta? ¡Regístrate!</button>
-                            </p>
+                        <p class="row">
+                            <button class="col button color-gray">¿No tienes cuenta? ¡Regístrate!</button>
+                        </p>
                     </div>
-                        
+                    <div class="block">
+                        <p class="row">
+                            <a href="/perfil/" data-view=".page-content" class="col button button-big button-fill">Perfil</a>
+                        </p>
+                    </div>
+
                     <!-- Link to another page -->
                     <a href="/register/" data-view=".page-content">¿No tienes cuenta en SOSApp?</a>
-                    
+
+
                 </div>
             </div>
         </div>
@@ -109,6 +118,8 @@
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
     <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript" src="js/perfil.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
 </body>
 
 </html>

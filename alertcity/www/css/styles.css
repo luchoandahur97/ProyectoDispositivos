@@ -1,4 +1,4 @@
-/*
+    /*
    statusbar-overlay sets the background color for the overlay. Black text is the default when the statusbar plugin is not added. When the
    statusbar plugin is added, it also adds default setting to make the content white via:
 
@@ -9,19 +9,16 @@
 
    See https://github.com/apache/cordova-plugin-statusbar
 */
-
-.statusbar-overlay {
-    background: #000000;
-}
-.imagenInicio{
-    margin:30px auto;
-    display:block;   
-}
-
-.item-title{
-    font-size: 50px;
-}
-
-.formulario{
-    background: #000000;
-}
+    
+    .statusbar-overlay {
+        background: #000000;
+    }
+    
+    .imagenInicio {
+        margin: 30px auto;
+        display: block;
+    }
+    
+    .formulario {
+        background: #000000;
+    }

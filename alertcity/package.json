@@ -9,9 +9,12 @@
         "platforms": [
             "browser"
         ],
-        "plugins": {}
+        "plugins": {
+            "cordova-plugin-camera": {}
+        }
     },
     "dependencies": {
-        "cordova-browser": "~5.0.4"
+        "cordova-browser": "~5.0.4",
+        "cordova-plugin-camera": "4.0.3"
     }
 }
