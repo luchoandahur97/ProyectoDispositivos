@@ -10,7 +10,8 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *">
+        <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *">-->
+        <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src * 'unsafe-inline'; media-src *">
 
     <!-- Required meta tags-->
     <meta charset="utf-8">
@@ -23,6 +24,8 @@
     <!-- Path to Framework7 Library CSS -->
     <link rel="stylesheet" href="lib/framework7/css/framework7.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
 </head>
 
@@ -58,7 +61,6 @@
         
                 <!-- Scrollable page content -->
                 <div class="page-content">
-
                         <img class="imagenInicio" src="vector/position.svg" height="100px" width="100px" />
 
                     <form id="formulario">
@@ -86,7 +88,7 @@
                                 </ul>
                         </div>
                     </form>	
-                    
+                                       
                     <div class="block">
                             <p class="row">
                               <button class="col button button-big button-fill">Iniciar Sesión</button>
@@ -101,7 +103,8 @@
                         
                     <!-- Link to another page -->
                     <a href="/register/" data-view=".page-content">¿No tienes cuenta en SOSApp?</a>
-                    
+                    <br>
+                    <a href="/home/" target="_parent">Pasa a Home</a>
                 </div>
             </div>
         </div>
