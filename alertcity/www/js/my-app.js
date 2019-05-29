@@ -21,6 +21,14 @@ var app = new Framework7({
         path: '/register/',
         url: 'register.html',
       },
+      {
+        path: '/home/',
+        url: 'home.html',
+      },
+      {
+        path: '/index/',
+        url: 'index.html',
+      },
     ]
     // ... other parameters
   });
