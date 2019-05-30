@@ -18,6 +18,10 @@ var app = new Framework7({
     // Add default routes
     routes: [
       {
+        path: '/login/',
+        url: 'login.html',
+      },
+      {
         path: '/register/',
         url: 'register.html',
       },
@@ -28,6 +32,10 @@ var app = new Framework7({
       {
         path: '/index/',
         url: 'index.html',
+      },
+      {
+        path: '/alerta/',
+        url: 'alerta.html',
       },
     ]
     // ... other parameters

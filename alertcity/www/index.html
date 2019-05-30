@@ -13,23 +13,25 @@
         <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *">-->
         <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src * 'unsafe-inline'; media-src *">
 
-    <!-- Required meta tags-->
+    <!-- Required meta tags--> 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <!-- Color theme for statusbar -->
     <meta name="theme-color" content="#2196f3">
-    <!-- Your app title -->
+    <!-- Your app title --> 
     <title>My App</title>
     <!-- Path to Framework7 Library CSS -->
     <link rel="stylesheet" href="lib/framework7/css/framework7.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <link rel="stylesheet" href="path/to/framework7-icons.css">
 
 </head>
 
 <body>
+
     <div id="app">
         <!-- Statusbar overlay -->
         <div class="statusbar"></div>
@@ -38,80 +40,45 @@
         <div class="view view-main">
             <!-- Initial Page, "data-name" contains page name -->
             <div data-name="home" class="page">
-    
-                <!-- Top Navbar -->
-                <div class="navbar">
-                    <div class="navbar-inner">
-                    <div class="title">SOSApp</div>
-                    </div>
-                </div>
-        
-                <!-- Toolbar -->
-                <!--
-                <div class="toolbar">
-                    <div class="toolbar-inner">
-                    -->
-                    <!-- Toolbar links -->
-                    <!--
-                    <a href="#" class="link">Link 1</a>
-                    <a href="#" class="link">Link 2</a>
-                    </div>
-                </div>
-                -->
-        
-                <!-- Scrollable page content -->
+
                 <div class="page-content">
-                        <img class="imagenInicio" src="vector/position.svg" height="100px" width="100px" />
 
-                    <form id="formulario">
+                    <div class="titulo1">SOSApp</div>
+                    <img class="imagenInicio" src="vector/position.svg" height="100px" width="100px" />
+                            
+                            <div class="botonesIndex">
+                            <div class="block">
+                                <p>
+                                    <a href="/login/" class="col button button-fill color-green">Iniciar Sesión</a>
+                                </p>
+                                <p>
+                                    <a href="/register/" class="col button button-fill color-pink">Registrarme</a>
+                                </p>
+                                <p>
+                                    <a href="/alerta/"  class="col button button-fill color-gray">Centro de alertas</a>
+                                </p>
+                            </div>
+                            </div>
+                            <br/>
 
-                        <div class="list inline-labels no-hairlines-md">
-                                <ul>
-                                  <li class="item-content item-input">
-                                    <div class="item-inner">
-                                      <div class="item-title item-label">Usuario</div>
-                                      <div class="item-input-wrap">
-                                        <input type="text" placeholder="Tu nombre de usuario">
-                                        <span class="input-clear-button"></span>
-                                      </div>
+                            <div data-pagination='{"el": ".swiper-pagination"}' data-space-between="50" class="swiper-container swiper-init demo-swiper">
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-wrapper">
+                                      <div class="swiper-slide">¿Quiénes somos?</div>
+                                      <div class="swiper-slide">¿Qué hacemos?</div>
+                                      <div class="swiper-slide">Pide ayuda</div>
+                                      <div class="swiper-slide">Brinda ayuda</div>
+                                      <div class="swiper-slide">Tu seguridad nos importa</div>
                                     </div>
-                                  </li>
-                                  <li class="item-content item-input">
-                                    <div class="item-inner">
-                                      <div class="item-title item-label">Contraseña</div>
-                                      <div class="item-input-wrap">
-                                        <input type="password" placeholder="**********">
-                                        <span class="input-clear-button"></span>
-                                      </div>
-                                    </div>
-                                  </li>
-                                </ul>
-                        </div>
-                    </form>	
-                                       
-                    <div class="block">
-                            <p class="row">
-                              <button class="col button button-big button-fill">Iniciar Sesión</button>
-                            </p>
-                    </div>
-
-                    <div class="block">
-                            <p class="row">
-                              <button class="col button color-gray">¿No tienes cuenta? ¡Regístrate!</button>
-                            </p>
-                    </div>
-                        
-                    <!-- Link to another page -->
-                    <a href="/register/" data-view=".page-content">¿No tienes cuenta en SOSApp?</a>
-                    <br>
-                    <a href="/home/" target="_parent">Pasa a Home</a>
-                </div>
+                            </div>
             </div>
         </div>
     </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
     <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript" src="js/alerta.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvsNbfp-YQFN5aJ9mS0Q4CIXoifKY0MQE&callback=initMap" async defer></script>
 </body>
 
 </html>

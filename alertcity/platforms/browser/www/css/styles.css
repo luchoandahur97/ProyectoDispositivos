@@ -14,14 +14,62 @@
     background: #000000;
 }
 .imagenInicio{
-    margin:30px auto;
-    display:block;   
+    margin: 30px auto;
+    display: block;   
 }
-
+.imagenInicioAlerta{
+    margin: 37% auto;
+    margin-left: 1% auto;
+    display: block;
+    position: fixed;
+    z-index: 99;
+}
+.textAlert{
+  width: 100%;
+  margin: 20px auto;
+  font-size: 20px;
+  font-weight: 300;
+  display: block;
+  text-align: center;
+  background: rgba(214, 47, 47, 0.767);
+  color: #fff;
+  border-radius: 5px;
+}
+.iconAlert{
+  width: 80px;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 30px;
+  color: rgba(214, 47, 47, 0.767);
+}
 .item-title{
     font-size: 50px;
 }
+.titulo1{
+    font-size: 40px;
+    margin: 60px auto;
+    display:block;  
+    text-align: center;
+    color: #404040;
+    font-weight: lighter;
+}
+.botonesIndex{
+  width: 100%;
+  margin: auto;
+}
+.link{
+  border-radius: 100%;
+}
+.row{
+    margin: auto;
+    display:block;  
+}
+.navbar{
+    background: #404040;
+}
 
+<<<<<<< HEAD
 .formulario{
     background: #000000;
 }
@@ -105,3 +153,35 @@
     border-bottom: 1px solid #eee;
     margin-bottom: 10px;
   }
+=======
+/* Estilos de el slider del index */;
+.demo-swiper .swiper-slide {
+    font-size: 25px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: #000;
+  }
+  .demo-swiper .swiper-slide {
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    background: #fff;
+  }
+  .demo-swiper {
+    margin: 0px 0 35px;
+    font-size: 18px;
+    height: 120px;
+    text-align: center;
+  }
+  .demo-swiper.demo-swiper-auto .swiper-slide {
+    width: 85%;
+  }
+  .demo-swiper.demo-swiper-auto .swiper-slide:nth-child(2n) {
+    width: 70%;
+  }
+  .demo-swiper.demo-swiper-auto .swiper-slide:nth-child(3n) {
+    width: 30%;
+  }
+>>>>>>> c687124cd119b139bba7fafd263f859ffc39f401

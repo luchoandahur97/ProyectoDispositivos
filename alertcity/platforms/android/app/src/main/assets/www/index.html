@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src * 'unsafe-inline'; media-src *">
+
+    <!-- Required meta tags--> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title --> 
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS -->
+    <link rel="stylesheet" href="lib/framework7/css/framework7.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="path/to/framework7-icons.css">
+
+</head>
+
+<body>
+
+    <div id="app">
+        <!-- Statusbar overlay -->
+        <div class="statusbar"></div>
+    
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="home" class="page">
+
+                <div class="page-content">
+
+                    <div class="titulo1">SOSApp</div>
+                    <img class="imagenInicio" src="vector/position.svg" height="100px" width="100px" />
+                            
+                            <div class="botonesIndex">
+                            <div class="block">
+                                <p>
+                                    <a href="/login/" class="col button button-fill color-green">Iniciar Sesión</a>
+                                </p>
+                                <p>
+                                    <a href="/register/" class="col button button-fill color-pink">Registrarme</a>
+                                </p>
+                                <p>
+                                    <a href="/alerta/"  class="col button button-fill color-gray">Centro de alertas</a>
+                                </p>
+                            </div>
+                            </div>
+                            <br/>
+
+                            <div data-pagination='{"el": ".swiper-pagination"}' data-space-between="50" class="swiper-container swiper-init demo-swiper">
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-wrapper">
+                                      <div class="swiper-slide">¿Quiénes somos?</div>
+                                      <div class="swiper-slide">¿Qué hacemos?</div>
+                                      <div class="swiper-slide">Pide ayuda</div>
+                                      <div class="swiper-slide">Brinda ayuda</div>
+                                      <div class="swiper-slide">Tu seguridad nos importa</div>
+                                    </div>
+                            </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript" src="js/alerta.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvsNbfp-YQFN5aJ9mS0Q4CIXoifKY0MQE&callback=initMap" async defer></script>
+</body>
+
+</html>
