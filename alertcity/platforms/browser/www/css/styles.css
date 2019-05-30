@@ -69,7 +69,6 @@
     background: #404040;
 }
 
-<<<<<<< HEAD
 .formulario{
     background: #000000;
 }
@@ -153,7 +152,6 @@
     border-bottom: 1px solid #eee;
     margin-bottom: 10px;
   }
-=======
 /* Estilos de el slider del index */;
 .demo-swiper .swiper-slide {
     font-size: 25px;
@@ -184,4 +182,3 @@
   .demo-swiper.demo-swiper-auto .swiper-slide:nth-child(3n) {
     width: 30%;
   }
->>>>>>> c687124cd119b139bba7fafd263f859ffc39f401
