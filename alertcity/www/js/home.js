@@ -1,52 +1,22 @@
-// Initialize app
-var myApp = new Framework7();
-  
-// If we need to use custom DOM library, let's save it to $$ variable:
-var $$ = Dom7;
-
-var app = new Framework7({
-    // App root element
-    root: '#home',
-    // App Name
-    name: 'My App',
-    // App id
-    id: 'com.myapp.test',
-    // Enable swipe panel
-    panel: {
-      swipe: 'left',
-    },
-    // Add default routes
-    routes: [
-      {
-        path: '/index/',
-        url: 'index.html'
-      },
-    ]
-    
-    // ... other parameters
-  });
-
-var mainView = app.views.create('.view-main');
-
 // Handle Cordova Device Ready Event
 $$(document).on('deviceready', function() {
     console.log("Device is ready!");
     console.log('paso por home.js');
-    var watchID = navigator.geolocation.watchPosition(funcionExito,funcionError, opcionesGPS);
 });
 
 // Option 1. Using one 'page:init' handler for all pages
 $$(document).on('page:init', function (e) {
     // Do something here when page loaded and initialized
+    initMap();
+    var watchID = navigator.geolocation.watchPosition(funcionExito,funcionError, opcionesGPS);
     console.log(e);
 })
 
 // Option 2. Using live 'page:init' event handlers for each page
-$$(document).on('page:init', '.page[data-name="about"]', function (e) {
+$$(document).on('page:init', '.page[data-name="principal"]', function (e) {
     // Do something here when page with data-name="about" attribute loaded and initialized
     console.log(e);
 })
-
 function funcionExito(position){
   console.log('Latitude: '         + position.coords.latitude    );      
   console.log('Longitude: '         + position.coords.longitude    );  
