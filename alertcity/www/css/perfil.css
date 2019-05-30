@@ -1,0 +1,37 @@
+.circulo {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    background-size: cover;
+}
+
+.card.card-outline {
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    background-size: cover;
+}
+
+.fotoperfil {
+    display: block;
+}
+
+.material-icons.md-32 {
+    font-size: 32px;
+}
+
+.item-title {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.item-subtitle {
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.material-icons.md-16 {
+    font-size: 16px;
+    color: black;
+}

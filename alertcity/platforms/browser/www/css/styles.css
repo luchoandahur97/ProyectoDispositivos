@@ -1,4 +1,4 @@
-/*
+    /*
    statusbar-overlay sets the background color for the overlay. Black text is the default when the statusbar plugin is not added. When the
    statusbar plugin is added, it also adds default setting to make the content white via:
 
@@ -182,3 +182,16 @@
   .demo-swiper.demo-swiper-auto .swiper-slide:nth-child(3n) {
     width: 30%;
   }
+    
+    .statusbar-overlay {
+        background: #000000;
+    }
+    
+    .imagenInicio {
+        margin: 30px auto;
+        display: block;
+    }
+    
+    .formulario {
+        background: #000000;
+    }
