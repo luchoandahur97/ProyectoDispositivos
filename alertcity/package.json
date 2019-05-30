@@ -7,11 +7,16 @@
     "displayName": "Alertcity",
     "cordova": {
         "platforms": [
-            "browser"
+            "browser",
+            "android"
         ],
-        "plugins": {}
+        "plugins": {
+            "cordova-plugin-geolocation": {}
+        }
     },
     "dependencies": {
-        "cordova-browser": "~5.0.4"
+        "cordova-android": "7.1.4",
+        "cordova-browser": "~5.0.4",
+        "cordova-plugin-geolocation": "4.0.1"
     }
 }
