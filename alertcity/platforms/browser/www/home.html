@@ -5,68 +5,99 @@
         <meta charset= "UTF-8">
         <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src * 'unsafe-inline'; media-src *">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="#2196f3">
     <title>Home</title>
-    <link rel="stylesheet" href="lib/framework7/css/framework7.min.css">
         <link href="../www/css/styles.css" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        
     </head>
+
     <body>
-        
         <div id="home">
-            <div class="page">
+            <div class="page" data-name="principal">
                 <div class="navbar">
-                    <div class="navbar-inner">
+                    <div class="navbar-inner sliding">
                         <div class="left">
                             <span class="panel-open">
-                                <i class="material-icons md-48">menu</i>
+                                <i class="material-icons md-36">menu </i>
                             </span>
                             <div class="panel panel-left panel-reveal">
-                                <div class="block">
-                                <p>Left Panel content here</p>
-                                <p><a class="panel-close" href="#">Close me</a></p>
-                                <p><a class= "link" href="#">Perfil</a></p>
+                                <div id="menu" class="block">
+                                <h1>Menu</h1>
+                                <p><i class="material-icons">phone</i><a class="panel-open" data-panel="right">N° Emergencias</a></p>
+                                <p><i class= "material-icons">account_circle</i> <a class= "link" href="#">Perfil</a></p>
                                 <p><a class="link" href="/index/" data-view=".page-content">Index</a>
                                 </div>
-                        </div>
+                            </div>
                         </div>
                         <div class="title">SOS App</div>
-                    </div>
-                </div>
-                <div class="page-content">
-                        <p>Latitud: <span id="lat"></span></p>
-                        <p>Longitud: <span id="lgn"></span></p>
-                        <div id="map" style="height: 60%;"></div>
+                        <div class="right">
+                                <span class="panel-open" data-panel="right">
+                                    <a> N° Emergencias <b><i class="material-icons">phone</i></a>
+                                </span>
+                                <div class="panel panel-right panel-reveal">
+                                    <div id="numeros" class="block">
+                                            <span><h2><i class="material-icons">report</i>Emergencias</h2></span>
+                                            <p>Ambulancia: <a>131</a></p>
+                                            <p>Bomberos: <a>132</a></p>
+                                            <p>Carabineros: <a>133</a></p>
 
-                    <div class="fab fab-center-bottom color-red">
-                        <a href="#">
-                            <i class="icon material-icons">SOS</i>
-                            <i class="icon material-icons md-only">close</i>
-                        </a>
-                            <div class="fab-buttons fab-buttons-top">
-                                <a href="">1</a>
-                                <a href="">2</a>
-                                <a href="">3</a>
-                            </div>
-                    </div> 
-                     <!--
-                    <div class="toolbar toolbar-bottom">
-                            <div class="toolbar-inner">
-                            <a class="link">Link 1</a>
-                            <a class="link">Link 3</a>
+                                            <span><h2><i class="material-icons">contacts</i>Contactos</h2></span>
+                                            <p><a>Papa</a></p>
+                                            <p><a>Mama</a></p>
+                                            <p><a>Juan</a></p>
+                                            <p><a>Maria</a></p>
+                                    </div>
+                                </div>
                             </div>
                     </div>
-                    -->            
                 </div>
+                
+                
+                <div class="page-content">
+                    
+                    <div id="map" style="height: 45%;"></div>
+                    <div id= "bloque-sos"class="block">
+                        <div id="btn-sos" class="fab fab-center-bottom color-red">
+                            <a href="#">
+                                <i class="icon material-icons md-36">priority_high</i>
+                                <i class="icon material-icons md-only">close</i>
+                            </a>
+                            <div class="fab-buttons fab-buttons-bottom">
+                                   
+                                <a href="#" class="fab-label-button">
+                                    <span>1</span>
+                                    <span class="fab-label">¡Me asaltan!</span>
+                                </a>
+                                <a href="#" class="fab-label-button">
+                                    <span>2</span>
+                                    <span class="fab-label">¡Me siento perseguid@!</span>
+                                </a>
+                                <a href="#" class="fab-label-button">
+                                    <span>3</span>
+                                    <span class="fab-label">¡Incendio!</span>
+                                </a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <!--
+                <div class="toolbar toolbar-bottom-md">
+                    <div class="toolbar-inner">
+                        <a class="link">Link 1</a>
+                        
+                        <a class="panel-open" data-panel="right">right
+                            <div class="panel panel-right panel-reveal">
+                                <div class="block">
+                                    <p>133</p>
+                                    <p>131</p>
+                                    <p>132</p>
+                            </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>    
+                -->
             </div>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvsNbfp-YQFN5aJ9mS0Q4CIXoifKY0MQE&callback=initMap"
-    async defer></script>
-    <script type= "text/javascript" src="js/home.js"></script>
     </body>
-   
+
 </html>
