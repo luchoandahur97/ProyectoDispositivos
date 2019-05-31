@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <!--
         Customize this policy to fit your own app's needs. For more guidance, see:
@@ -10,6 +11,7 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
+        <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *">-->
         <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src * 'unsafe-inline'; media-src *">
 
     <!-- Required meta tags--> 
@@ -23,7 +25,10 @@
     <!-- Path to Framework7 Library CSS -->
     <link rel="stylesheet" href="lib/framework7/css/framework7.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="path/to/framework7-icons.css">
+    <link rel="stylesheet" href="css/perfil.css">
 
 </head>
 
@@ -32,7 +37,7 @@
     <div id="app">
         <!-- Statusbar overlay -->
         <div class="statusbar"></div>
-    
+
         <!-- Your main view, should have "view-main" class -->
         <div class="view view-main">
             <!-- Initial Page, "data-name" contains page name -->
@@ -51,10 +56,7 @@
                                 <p>
                                     <a href="/register/" class="col button button-fill color-pink">Registrarme</a>
                                 </p>
-                                <p>
-                                    <a href="/alerta/"  class="col button button-fill color-gray">Centro de alertas</a>
-                                </p>
-                            </div>
+                                </div>
                             </div>
                             <br/>
 
@@ -76,6 +78,9 @@
     <script type="text/javascript" src="js/my-app.js"></script>
     <script type="text/javascript" src="js/alerta.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvsNbfp-YQFN5aJ9mS0Q4CIXoifKY0MQE&callback=initMap" async defer></script>
+    <script type="text/javascript" src="js/perfil.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <script type="text/javascript" src="js/home.js"></script>
 </body>
 
 </html>

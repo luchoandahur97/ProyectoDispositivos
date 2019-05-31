@@ -6,22 +6,20 @@
     },
     "displayName": "Alertcity",
     "dependencies": {
-        "cordova-android": "7.1.4",
+        "cordova-android": "^7.1.4",
         "cordova-browser": "~5.0.4",
-        "cordova-plugin-geolocation": "4.0.1",
         "cordova-plugin-camera": "4.0.3",
+        "cordova-plugin-geolocation": "4.0.1",
         "framework7-icons": "^2.3.1"
-        },
+    },
     "cordova": {
         "platforms": [
             "browser",
             "android"
         ],
         "plugins": {
-            "cordova-plugin-geolocation": {}
+            "cordova-plugin-geolocation": {},
+            "cordova-plugin-camera": {}
         }
     }
-    
-    }
-
 }

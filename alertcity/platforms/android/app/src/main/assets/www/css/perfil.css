@@ -1,0 +1,43 @@
+.circulo {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    background-size: cover;
+}
+
+.card.card-outline {
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    background-size: cover;
+}
+
+.fotoperfil {
+    display: block;
+}
+
+.material-icons.md-32 {
+    font-size: 32px;
+}
+
+.item-title {
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: lighter;
+}
+
+.item-subtitle {
+    font-size: 15px;
+    margin-left: 10px;
+    color: rgb(133, 128, 128);
+}
+
+.material-icons.md-16 {
+    font-size: 16px;
+    color: rgba(34, 33, 33, 0.699);
+}
+
+.contenedor-perfil {
+    width: 50%;
+}

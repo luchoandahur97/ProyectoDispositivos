@@ -1,11 +1,4 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
-module.exports = [];
-module.exports.metadata = 
-// TOP OF METADATA
-{
-    "cordova-plugin-geolocation": "4.0.1",
-    "cordova-plugin-camera": "4.0.3"
-}
 module.exports = [
     {
         "file": "plugins/cordova-plugin-camera/www/CameraConstants.js",
@@ -38,6 +31,10 @@ module.exports = [
         "runs": true
     }
 ];
-
+module.exports.metadata = 
+// TOP OF METADATA
+{
+    "cordova-plugin-camera": "4.0.3"
+}
 // BOTTOM OF METADATA
 });

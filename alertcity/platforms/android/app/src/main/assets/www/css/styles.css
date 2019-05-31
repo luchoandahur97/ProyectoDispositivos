@@ -1,4 +1,4 @@
-/*
+    /*
    statusbar-overlay sets the background color for the overlay. Black text is the default when the statusbar plugin is not added. When the
    statusbar plugin is added, it also adds default setting to make the content white via:
 
@@ -69,6 +69,89 @@
     background: #404040;
 }
 
+.formulario{
+    background: #000000;
+}
+
+@font-face {
+    font-family: 'Framework7 Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Framework7Icons-Regular.eot");
+    src: local('Framework7 Icons'),
+       local('Framework7Icons-Regular'),
+       url("../fonts/Framework7Icons-Regular.woff2") format("woff2"),
+       url("../fonts/Framework7Icons-Regular.woff") format("woff"),
+       url("../fonts/Framework7Icons-Regular.ttf") format("truetype");
+  }
+  
+  .f7-icons, .framework7-icons {
+    font-family: 'Framework7 Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-feature-settings: "liga";
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+    font-feature-settings: "liga";
+  }
+  .icons {
+    overflow: hidden;
+  }
+  .content .icon-cell .f7-icons {
+    cursor: pointer;
+  }
+  .content {
+    padding-bottom: 250px;
+  }
+  .icons .icon-cell {
+    float: left;
+    width: calc(100% / 7);
+    text-align: center;
+    height: 100px;
+    margin-top: 30px;
+  }
+  .icons .icon-name,
+  .icons .icon-size {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+  }
+  @media (max-width: 960px) {
+    .icon-preview {
+      left: 0;
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  .icon-preview .icons {
+    font-size: 0;
+    padding-bottom: 10px;
+  }
+  .icon-preview .icon-cell {
+    float: none;
+    display: inline-block;
+    margin: 0;
+    vertical-align: bottom;
+    height: auto;
+  }
+  .icon-preview .icon-preview-name {
+    font-size: 18px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+  }
 /* Estilos de el slider del index */;
 .demo-swiper .swiper-slide {
     font-size: 25px;
@@ -99,3 +182,53 @@
   .demo-swiper.demo-swiper-auto .swiper-slide:nth-child(3n) {
     width: 30%;
   }
+    
+    .statusbar-overlay {
+        background: #000000;
+    }
+    
+    .imagenInicio {
+        margin: 30px auto;
+        display: block;
+    }
+    
+    .formulario {
+        background: #000000;
+    }
+
+  .fab-label{
+    left: 100%;
+    margin-left: 8px;
+  }
+  
+  .material-icons.md-36{
+    font-size: 36px;
+  }
+  .material-icons.md-24{
+    font-size: 24px;
+  }
+  .title{
+    
+  }
+  .left{
+    left:0.5%;
+  }
+  .right{
+    right:0.5%;
+  }
+ #bloque-sos{
+   margin-top: 5.5%;
+   margin-bottom: 5%;
+ }
+
+ #menu p{
+  font-size: 17px;
+ }
+ #numeros p{
+   text-align: center;
+ }
+#map{
+  margin-top:1%;
+  margin-left: 1%;
+  margin-right:1%; 
+}

@@ -40,10 +40,11 @@ var app = new Framework7({
       {
         path: '/perfil/',
         url: 'perfil.html',
+
     },
     ]
-    // ... other parameters    
-});
+    // ... other parameters
+  });
 
 var mainView = app.views.create('.view-main');
 
