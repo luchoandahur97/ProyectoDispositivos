@@ -207,9 +207,6 @@
   .material-icons.md-24{
     font-size: 24px;
   }
-  .title{
-    
-  }
   .left{
     left:0.5%;
   }
@@ -217,18 +214,48 @@
     right:0.5%;
   }
  #bloque-sos{
-   margin-top: 5.5%;
-   margin-bottom: 5%;
+   margin-top: -5%;
+   margin-bottom: 0%;
+ }
+ #btn-sos{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background: rgba(219, 0, 0, 0.705);
+ }
+ #btn-sos-desplegar{
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  background: rgba(219, 0, 0, 0.705);
+ }
+ #textBtn{
+   font-size: 60px;
  }
 
  #menu p{
   font-size: 17px;
+  font-weight: lighter;
+ }
+ #fontMenu{
+   color: rgba(34, 33, 33, 0.699);
+   font-weight: lighter;
+ }
+ #menu i{
+   font-size: 20px;
+   color: rgba(34, 33, 33, 0.699);
  }
  #numeros p{
-   text-align: center;
+   text-align: left;
+   margin-left: 32px;
+ }
+ 
+ #phoneEmergency{
+   margin-top: 10px;
  }
 #map{
-  margin-top:1%;
-  margin-left: 1%;
-  margin-right:1%; 
+  margin-top: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-bottom: 0px; 
 }

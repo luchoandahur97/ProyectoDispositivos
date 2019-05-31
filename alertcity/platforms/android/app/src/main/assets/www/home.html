@@ -17,68 +17,66 @@
                     <div class="navbar-inner sliding">
                         <div class="left">
                             <span class="panel-open">
-                                <i class="material-icons md-36">menu </i>
+                                <i class="icon f7-icons">menu </i>
                             </span>
                             <div class="panel panel-left panel-reveal">
                                 <div id="menu" class="block">
-                                <h1>Menu</h1>
-                                <p><i class="material-icons">phone</i><a class="panel-open" data-panel="right">N° Emergencias</a></p>
-                                <p class= "panel-close"><i class= "material-icons">account_circle</i> <a class= "link" href="/perfil/" data-view=".page-content">Perfil</a></p>
-                                <p class= "panel-close"><i class= "material-icons">notification_important</i> <a class= "link" href="/alerta/" data-view=".page-content">Centro de Alertas</a></p>
-                                <p class= "panel-close"><a class="link" href="/index/" data-view=".page-content">Index</a>
+                                <h1 id="fontMenu">Menú</h1>
+                                <p><i class="icon f7-icons">phone_fill</i><a class="panel-open no-ripple" data-panel="right"> Emergencias</a></p>
+                                <p class= "panel-close"><i class= "icon f7-icons">person_round_fill</i> <a class= "link no-ripple" href="/perfil/" data-view=".page-content"> Mi Perfil</a></p>
+                                <p class= "panel-close"><i class= "icon f7-icons">bell_fill</i> <a class= "link no-ripple" href="/alerta/" data-view=".page-content"> Centro de Alertas</a></p>
+                                <p class= "panel-close"><i class= "icon f7-icons">close_round_fill</i> <a class="link no-ripple" href="/index/" data-view=".page-content"> Cerrar Sesión</a></p>
                                 </div>
                             </div>
                         </div>
-                        <div class="title">SOS App</div>
+                        <div class="title">SOSApp</div>
                         <div class="right">
                                 <span class="panel-open" data-panel="right">
-                                    <a> N° Emergencias <b><i class="material-icons">phone</i></a>
+                                    <a style="font-weight:lighter">Emergencias <b><i class="icon f7-icons">phone_fill</i></a>
                                 </span>
                                 <div class="panel panel-right panel-reveal">
                                     <div id="numeros" class="block">
-                                            <span><h2><i class="material-icons">report</i>Emergencias</h2></span>
+                                            <span><h1 id="fontMenu"><i class="icon f7-icons">heart_fill</i> Emergencias</h1></span>
                                             <p>Ambulancia: <a>131</a></p>
                                             <p>Bomberos: <a>132</a></p>
                                             <p>Carabineros: <a>133</a></p>
 
-                                            <span><h2><i class="material-icons">contacts</i>Contactos</h2></span>
-                                            <p><a>Papa</a></p>
-                                            <p><a>Mama</a></p>
+                                            <span><h1 id="fontMenu"><i class="icon f7-icons">persons_round_fill</i> Contactos</h1></span>
+                                            <p><a>Papá</a></p>
+                                            <p><a>Mamá</a></p>
                                             <p><a>Juan</a></p>
-                                            <p><a>Maria</a></p>
+                                            <p><a>María</a></p>
                                     </div>
                                 </div>
                             </div>
                     </div>
                 </div>
-                
-                
+
                 <div class="page-content">
                     
-                    <div id="map" style="height: 45%;"></div>
-                    <div id= "bloque-sos"class="block">
-                        <div id="btn-sos" class="fab fab-center-bottom color-red">
-                            <a href="#">
-                                <i class="icon material-icons md-36">priority_high</i>
-                                <i class="icon material-icons md-only">close</i>
-                            </a>
-                            <div class="fab-buttons fab-buttons-bottom">
-                                   
-                                <a href="#" class="fab-label-button">
-                                    <span>1</span>
-                                    <span class="fab-label">¡Me asaltan!</span>
+                    <div id="map" style="height: 100%"></div>
+                        <div id="bloque-sos"class="block no-ripple">
+                            <div class="fab fab-center-bottom color-red">
+                                <a href="#" id="btn-sos" class="no-ripple">
+                                    <i id="textBtn" class="icon material-icons md-36">notification_important</i>
+                                    <i id="textBtn" class="icon material-icons md-only">close</i>
                                 </a>
-                                <a href="#" class="fab-label-button">
-                                    <span>2</span>
-                                    <span class="fab-label">¡Me siento perseguid@!</span>
-                                </a>
-                                <a href="#" class="fab-label-button">
-                                    <span>3</span>
-                                    <span class="fab-label">¡Incendio!</span>
-                                </a>
-                            </div>
-                        </div> 
-                    </div>
+                                <div class="fab-buttons fab-buttons-top">
+                                    <a id="btn-sos-desplegar" href="#" class="fab-label-button">
+                                        <i class="icon material-icons md-24">message</i>
+                                        <span class="fab-label">¡Me asaltan!</span>
+                                    </a>
+                                    <a id="btn-sos-desplegar" href="#" class="fab-label-button">
+                                        <i class="icon material-icons md-24">message</i>
+                                        <span class="fab-label">¡Me persiguen!</span>
+                                    </a>
+                                    <a id="btn-sos-desplegar" href="#" class="fab-label-button">
+                                        <i class="icon material-icons md-24">message</i>
+                                        <span class="fab-label">¡Incendio!</span>
+                                    </a>
+                                </div>
+                            </div> 
+                        </div>
                 </div>
                 <!--
                 <div class="toolbar toolbar-bottom-md">

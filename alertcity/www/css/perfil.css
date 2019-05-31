@@ -1,7 +1,7 @@
 .circulo {
     width: 150px;
     height: 150px;
-    border-radius: 150px;
+    border-radius: 100%;
     background-size: cover;
 }
 
@@ -9,7 +9,7 @@
     margin: auto;
     width: 150px;
     height: 150px;
-    border-radius: 150px;
+    border-radius: 100%;
     background-size: cover;
 }
 

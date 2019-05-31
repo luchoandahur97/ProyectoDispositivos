@@ -11,6 +11,14 @@ $$(document).on('page:init', function(e) {
     console.log(e);
 });
 
+// Option 2. Using live 'page:init' event handlers for each page
+$$(document).on('page:init', '.page[data-name="alerta"]', function(e) {
+    // Do something here when page with data-name="about" attribute loaded and initialized
+    initMap();
+    var watchID = navigator.geolocation.watchPosition(funcionExito, funcionError, opcionesGPS);
+    console.log(e);
+});
+
 var marcador;
 var marcador2; //Marcador de prueba para crear un segundo supuesto usuario en el mapa
 var map;
