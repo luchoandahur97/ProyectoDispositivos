@@ -6,7 +6,7 @@ $$(document).on('deviceready', function() {
 
 // Option 1. Using one 'page:init' handler for all pages
 $$(document).on('page:init', function (e) {
-    // Do something here when page loaded and initialized
+    //Inicia un mapa y se carga cuando se inicia una nueva pagina
     initMap2();
     var watchID = navigator.geolocation.watchPosition(funcionExito,funcionError, opcionesGPS);
     console.log(e);
@@ -17,6 +17,12 @@ $$(document).on('page:init', '.page[data-name="principal"]', function (e) {
     // Do something here when page with data-name="about" attribute loaded and initialized
     console.log(e);
 })
+/**
+ * @description Funcion que se ejecuta cuando el mapa se inicia exitosamente. 
+ * Esta funcion actualiza los datos del marcador, la posicion y el centro del mapa.
+ * @param position 
+ * 
+ * */
 function funcionExito(position){
   console.log('Latitude: '         + position.coords.latitude    );      
   console.log('Longitude: '         + position.coords.longitude    );  
@@ -35,10 +41,14 @@ function funcionExito(position){
   map2.setZoom(17);
   marcador2.setPosition(pos);
 }
+/**
+ * @description Funcion que se ejecuta cuando el mapa no se pudo iniciar. 
+ * @param {*} error 
+ */
 function funcionError(error){
   console.log("hubo un error");
 }
-
+// Variable que contiene propiedades de un mapa
 var opcionesGPS={
   timeout: 5000,
   enableHighAccuracy: true,
@@ -47,6 +57,9 @@ var opcionesGPS={
 //Uso del mapa
 var map2;
 var marcador2;
+/**
+ * @description Funcion que permite iniciar un nuevo mapa
+ */
 function initMap2() {
   map2 = new google.maps.Map(document.getElementById('map2'), {
     center: {lat: -34.397, lng: 150.644},
@@ -57,11 +70,17 @@ function initMap2() {
     position: {lat: -34.397, lng: 150.644},
     map2: map2
   });
+  //Esta esperando el evento click para ejecutar la funcion que contiene.
   map2.addListener('click', function(e) {
     placeMarkerAndPanTo(e.latLng, map2);
   });
 }
 
+/**
+ * @description Funcion que permite generar un nuevo marcador en el mapa
+ * @param {*} latLng 
+ * @param {*} map2 
+ */
 function placeMarkerAndPanTo(latLng, map2) {
   var marker = new google.maps.Marker({
     position: latLng,
