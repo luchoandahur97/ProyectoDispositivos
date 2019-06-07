@@ -26,7 +26,7 @@
 }
 .textAlert{
   width: 100%;
-  margin: 0px auto;
+  margin: 5px auto;
   font-size: 20px;
   font-weight: 300;
   display: block;
@@ -53,6 +53,7 @@
     text-align: center;
     color: #404040;
     font-weight: lighter;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .botonesIndex{
   width: 100%;
@@ -267,7 +268,7 @@
 .texto-centro-alertas{
   font-size: 15px;
   margin-left: 10px;
-  font-weight: bold;
+  font-weight: lighter;
   color: brown;
 }
 #img-alerta{
