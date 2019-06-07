@@ -26,14 +26,14 @@
 }
 .textAlert{
   width: 100%;
-  margin: 20px auto;
+  margin: 0px auto;
   font-size: 20px;
   font-weight: 300;
   display: block;
   text-align: center;
   background: rgba(214, 47, 47, 0.767);
   color: #fff;
-  border-radius: 5px;
+  border-radius: 0px;
 }
 .iconAlert{
   width: 80px;
@@ -267,7 +267,12 @@
 .texto-centro-alertas{
   font-size: 15px;
   margin-left: 10px;
+  font-weight: bold;
+  color: brown;
 }
 #img-alerta{
-  border-radius: 100%
+  border-radius: 100%;
+}
+#bloque_persona_alerta{
+  margin-top: 25px;
 }
