@@ -218,21 +218,25 @@
    margin-bottom: 0%;
  }
  #btn-sos{
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 100%;
   background: rgba(219, 0, 0, 0.705);
  }
  #btn-sos-desplegar{
-  width: 55px;
-  height: 55px;
+  width: 65px;
+  height: 65px;
   border-radius: 100%;
-  background: rgba(219, 0, 0, 0.705);
+  background: rgba(51, 219, 0, 0.705);
+  margin: 3px auto;
+  margin-right: 100%;
+ }
+ #desplegar-btn-gral{
+   margin-left: -30px;
  }
  #textBtn{
    font-size: 60px;
  }
-
  #menu p{
   font-size: 17px;
   font-weight: lighter;
@@ -258,4 +262,12 @@
   margin-left: 0%;
   margin-right: 0%;
   margin-bottom: 0px; 
+}
+
+.texto-centro-alertas{
+  font-size: 15px;
+  margin-left: 10px;
+}
+#img-alerta{
+  border-radius: 100%
 }

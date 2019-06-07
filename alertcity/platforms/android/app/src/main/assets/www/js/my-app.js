@@ -34,6 +34,10 @@ var app = new Framework7({
         url: 'index.html',
       },
       {
+        path: '/alertCenter/',
+        url: 'alertCenter.html',
+      },
+      {
         path: '/alerta/',
         url: 'alerta.html',
       },

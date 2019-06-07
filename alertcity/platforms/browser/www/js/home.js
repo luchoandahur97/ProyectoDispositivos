@@ -32,7 +32,7 @@ function funcionExito(position){
 
   var pos = {lat: position.coords.latitude, lng: position.coords.longitude};
   map.setCenter(pos);
-  map.setZoom(14);
+  map.setZoom(17);
   marcador.setPosition(pos);
 }
 function funcionError(error){
@@ -41,7 +41,7 @@ function funcionError(error){
 
 var opcionesGPS={
   timeout: 5000,
-  enableHighAccuracy: true
+  enableHighAccuracy: true,
 }
 
 //Uso del mapa
