@@ -7,7 +7,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
     <title>Home</title>
         <link href="../www/css/styles.css" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
 
     <body>
@@ -19,12 +18,16 @@
                             <span class="panel-open">
                                 <i class="icon f7-icons">menu </i>
                             </span>
+                            <!-- Menu desplegado desde la izquierda de la pantalla -->
                             <div class="panel panel-left panel-reveal">
                                 <div id="menu" class="block">
                                 <h1 id="fontMenu">Menú</h1>
                                 <!--<p><i class="icon f7-icons">phone_fill</i><a class="panel-open no-ripple" data-panel="right"> Emergencias</a></p>-->
+                                <!-- Link que muestra la vista del perfil de un usuario -->
                                 <p class= "panel-close"><i class= "icon f7-icons">person_round_fill</i> <a class= "link no-ripple" href="/perfil/" data-view=".page-content"> Mi Perfil</a></p>
+                                <!-- Link que muestra la vista del centro de alertas -->
                                 <p class= "panel-close"><i class= "icon f7-icons">bell_fill</i> <a class= "link no-ripple" href="/alertCenter/" data-view=".page-content"> Centro de Alertas</a></p>
+                                <!-- Link para cerrar sesion y volver a la vista de inicio (index.html) -->
                                 <p class= "panel-close"><i class= "icon f7-icons">close_round_fill</i> <a class="link no-ripple" href="/index/" data-view=".page-content"> Cerrar Sesión</a></p>
                                 </div>
                             </div>
@@ -34,6 +37,7 @@
                                 <span class="panel-open" data-panel="right">
                                     <a style="font-weight:lighter">Emergencias <b><i class="icon f7-icons">phone_round </i></a>
                                 </span>
+                                <!-- Menu desplegado desde la derecha de la pantalla -->
                                 <div class="panel panel-right panel-reveal">
                                     <div id="numeros" class="block">
                                             <span><h1 id="fontMenu"><i class="icon f7-icons">heart_fill</i> Emergencias</h1></span>
@@ -53,23 +57,28 @@
                 </div>
 
                 <div class="page-content">
-                    
+                    <!-- Bloque que muestra un mapa -->
                     <div id="map" style="height: 100%"></div>
                         <div id="bloque-sos"class="block no-ripple">
+
+                            <!-- Boton central que muestra los mensajes de alerta -->
                             <div class="fab fab-center-bottom color-red">
                                 <a href="#" id="btn-sos" class="no-ripple">
-                                    <i id="textBtn" class="icon material-icons md-36">notification_important</i>
-                                    <i id="textBtn" class="icon material-icons md-only">close</i>
+                                    <i id="textBtn" class="icon f7-icons">bell_fill</i>
+                                    <i id="textBtn" class="icon f7-icons">close</i>
                                 </a>
                                 <div id="desplegar-btn-gral" class="fab-buttons fab-buttons-top">
+                                    <!-- Boton para seleccionar un mensaje de alerta -->
                                     <a id="btn-sos-desplegar" href="#" class="fab-label-button">
                                         <i class="icon f7-icons">paper_plane_fill</i>
                                         <span class="fab-label">¡Me asaltan!</span>
                                     </a>
+                                    <!-- Boton para seleccionar un mensaje de alerta -->
                                     <a id="btn-sos-desplegar" href="#" class="fab-label-button">
                                         <i class="icon f7-icons">paper_plane_fill</i>
                                         <span class="fab-label">¡Me persiguen!</span>
                                     </a>
+                                    <!-- Boton para seleccionar un mensaje de alerta -->
                                     <a id="btn-sos-desplegar" href="#" class="fab-label-button">
                                         <i class="icon f7-icons">paper_plane_fill</i>
                                         <span class="fab-label">¡Incendio!</span>
@@ -78,23 +87,6 @@
                             </div> 
                         </div>
                 </div>
-                <!--
-                <div class="toolbar toolbar-bottom-md">
-                    <div class="toolbar-inner">
-                        <a class="link">Link 1</a>
-                        
-                        <a class="panel-open" data-panel="right">right
-                            <div class="panel panel-right panel-reveal">
-                                <div class="block">
-                                    <p>133</p>
-                                    <p>131</p>
-                                    <p>132</p>
-                            </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>    
-                -->
             </div>
         </div>
     </body>

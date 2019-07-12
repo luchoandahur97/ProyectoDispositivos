@@ -15,7 +15,7 @@ var app = new Framework7({
     panel: {
         swipe: 'left',
     },
-    // Add default routes
+    // Listado de rutas dentro del la App
     routes: [
       {
         path: '/login/',
